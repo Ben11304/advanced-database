@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+    <title>Hello from Flask</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        {% if person %}
+            <h1>Hello {{ person }}!</h1>
+        {% else %}
+            <h1>Hello, World!</h1>
+        {% endif %}
+
+        {% if count > 5 %}
+            {% for i in range(count) %}
+                <p>{{ i }}</p>
+            {% endfor %}
+        {% else %}
+            <p>Count is 5 or less.</p>
+        {% endif %}
+    </div>
+</body>
+</html>
