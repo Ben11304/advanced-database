@@ -3,7 +3,7 @@ from setup_pets_database import setup_database
 
 # remember to $ pip install flask
 
-connection = sqlite3.connect("pets.db", check_same_thread=False)
+connection = sqlite3.connect("My_database.db", check_same_thread=False)
 
 def retrieve_pets():
     cursor = connection.cursor()

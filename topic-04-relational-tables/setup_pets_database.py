@@ -28,7 +28,7 @@ def setup_database(name):
 
     cursor.execute("""
         INSERT INTO pet (name, kind)
-        VALUES ("dorothy", "dog")
+        VALUES ("BYBY", "dog")
     """)
 
     cursor.execute("""
@@ -133,5 +133,5 @@ def setup_database(name):
     conn.commit()
 
 if __name__ == "__main__":
-    setup_database("pets.db")
+    setup_database("My_database.db")
 
